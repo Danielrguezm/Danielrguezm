@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Menú de navegación */
+  header {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+  }
+  
+  header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Secciones generales */
+  section {
+    padding: 60px 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 2em;
+    color: #1f1f1f;
+    margin-bottom: 15px;
+  }
+  
+  /* === CURRÍCULUM con tarjetas === */
+  .cv-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(to right, #e6f0ff, #ffffff);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cv-container h3 {
+    color: #0d3b66;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  .cv-container ul {
+    padding-left: 20px;
+    list-style-type: square;
+    color: #333;
+    font-size: 1em;
+  }
+  
+  /* === PROYECTOS en galería de tarjetas === */
+  .galeria-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .proyectos {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .proyectos:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .proyectos img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .proyectos h4 {
+    font-size: 1.2em;
+    padding: 15px 15px 5px;
+    color: #0d3b66;
+  }
+  
+  .proyectos p {
+    padding: 0 15px 15px;
+    color: #444;
+    font-size: 0.95em;
+  }
+  
+  /* Formulario */
+  form input,
+  form textarea,
+  form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+  }
+  
+  form button {
+    background-color: #1f1f1f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #333;
+  }
+  
+  /* Pie de página */
+  footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+  }
+  
